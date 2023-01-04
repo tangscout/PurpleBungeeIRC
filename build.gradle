@@ -13,7 +13,7 @@ targetCompatibility = JavaVersion.VERSION_17
 
 configurations {
     shade
-    compile.extendsFrom shade
+    implementation.extendsFrom shade
 }
 
 repositories {
@@ -31,7 +31,7 @@ repositories {
 
 dependencies {
     //shade fileTree (dir: 'dist-lib', include: '*.jar')
-    implementation('com.cnaude.pircbotx:pircbotx:2.1.8-shaded')
+    shade('com.cnaude.pircbotx:pircbotx:2.1.8-shaded')
     implementation('com.cnaude.herochat:HerochatBungeeBridgeBungee:1.1.0')
     implementation('commons-io:commons-io:2.7')
     implementation('net.md-5:bungeecord-api:1.19-R0.1-SNAPSHOT')

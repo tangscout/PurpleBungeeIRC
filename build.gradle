@@ -17,16 +17,11 @@ configurations {
 }
 
 repositories {
-    maven {
-        url = "https://repo.chrisnaude.com"
-    }
-    maven {
-        url = "https://oss.sonatype.org/content/repositories/snapshots"
-    }
-    maven {
-        url = "https://nexus.codecrafter47.dyndns.eu/content/repositories/public/"
-    }
     mavenCentral()
+    mavenLocal()
+    maven {url = 'https://repo.chrisnaude.com'}
+    maven {url = 'https://oss.sonatype.org/content/repositories/snapshots'}
+    maven {url = 'https://nexus.codecrafter47.dyndns.eu/content/repositories/public/'}
 }
 
 dependencies {

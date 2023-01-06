@@ -52,7 +52,7 @@ processResources {
 
     from(sourceSets.main.resources.srcDirs) {
         include 'plugin.yml'
-        duplicatesStrategy DuplicatesStrategy.EXCLUDE
+        duplicatesStrategy DuplicatesStrategy.INCLUDE
         expand 'version':version.toString(), name: 'PurpleBungeeIRC', description: 'PurpleBungeeIRC'
     }
 }

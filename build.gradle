@@ -26,7 +26,7 @@ repositories {
 
 dependencies {
     //shade fileTree (dir: 'dist-lib', include: '*.jar')
-    shade('com.cnaude.pircbotx:pircbotx:2.1.8-shaded')
+    shade('net.scoutlink:pircbotx:2.1.8')
     implementation('com.cnaude.herochat:HerochatBungeeBridgeBungee:1.1.0')
     implementation('commons-io:commons-io:2.7')
     implementation('net.md-5:bungeecord-api:1.19-R0.1-SNAPSHOT')
